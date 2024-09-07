@@ -19,6 +19,6 @@ jobs:
     - name: install python
       uses: actions/setup-python@v4
     - name: install dependencies
-      runs: pip install pandas 
+      run: pip install pandas 
     - name: run app 
-      runs: python app.py 
+      run: python app.py 
