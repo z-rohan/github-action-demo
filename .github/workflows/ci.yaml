@@ -1,6 +1,6 @@
 name: Run Pandas Dataframe
 
-On:
+on:
   push:
     branches:
       - main
@@ -12,13 +12,13 @@ On:
 
 jobs:
   run_pandas_jon:
-    runs-on: ubunto-latest
+    runs-on: ubuntu-latest
     steps:
     - name: checkout code
       uses: actions/checkout@v2
     - name: install python
       uses: actions/setup-python@v4
     - name: install dependencies
-      uses: pip install pandas 
+      runs: pip install pandas 
     - name: run app 
-      uses: python app.py 
+      runs: python app.py 
